@@ -35,5 +35,9 @@ const stream = [
 ];
 
 for (let i of stream) {
-  console.log(`The ${i} chosen number is ${pickRandom()}`);
+  console.log(
+    `The ${i}${
+      i === 1 ? "st" : i === 2 ? "nd" : i === 3 ? "rd" : "th"
+    } chosen number is ${pickRandom()}`
+  );
 }
